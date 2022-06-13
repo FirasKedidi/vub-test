@@ -1,9 +1,6 @@
 require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
-const Product = require('./models/product')
-const User = require('./models/user')
-const bcrypt = require('bcrypt')
 const productRoutes = require('./routes/productRoutes')
 const userRoutes = require('./routes/userRoutes')
 
