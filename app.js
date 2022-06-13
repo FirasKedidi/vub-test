@@ -1,0 +1,18 @@
+require('dotenv').config()
+const express = require('express')
+const mongoose = require('mongoose')
+const Product = require('./models/product')
+const User = require('./models/user')
+const bcrypt = require('bcrypt')
+const productRoutes = require('./routes/productRoutes')
+const userRoutes = require('./routes/userRoutes')
+
+mongoose.connect('mongodb://localhost/vub')
+    .then(() => console.log('Connected to Mongodb'))
+    .catch(err => console.log(err))
+
+const app = express()
+app.use(express.json())
+app.use(productRoutes)
+app.use(userRoutes)
+app.listen(3000)

@@ -16,8 +16,7 @@ const productSchema = new Schema({
         required: true
     },
     sellerId: {
-        type: String,
-        required: true
+        type: String
     }
 
 })
