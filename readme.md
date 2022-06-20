@@ -2,7 +2,6 @@
 Build a backend for a vending machine using **Node.js** and **Mongodb** as database.
 Implemented **JWT authentication** and protected routes.
 Coverred following parts:
-REST API should be implemented consuming and producing "application/json"
 * Implement product model with amountAvailable. cost, productName and sellerld fields
 * Implement user model with username, password, deposit and role fields
 * Implement an authentication method JWT
